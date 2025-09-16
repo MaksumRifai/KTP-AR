@@ -55,7 +55,7 @@
         const portfolio = document.querySelector("#portfolio-panel");
         const portfolioLeftButton = document.querySelector("#portfolio-left-button");
         const portfolioRightButton = document.querySelector("#portfolio-right-button");
-        const paintandquestPreviewButton = document.querySelector("#paintandquest-preview-button");
+        const paintandquestPreviewButton = document.querySelector("#kumparan-preview-button");
 
         let y = 0;
         let currentItem = 0;
@@ -87,10 +87,10 @@
               const testVideo = document.createElement( "video" );
               const canplayWebm = testVideo.canPlayType( 'video/webm; codecs="vp8, vorbis"' );
               if (canplayWebm == "") {
-                document.querySelector("#paintandquest-video-link").setAttribute("src", "#paintandquest-video-mp4");
+                document.querySelector("#paintandquest-video-link").setAttribute("src", "#kumparan-video-mp4");
                 document.querySelector("#paintandquest-video-mp4").play();
               } else {
-                document.querySelector("#paintandquest-video-link").setAttribute("src", "#paintandquest-video-webm");
+                document.querySelector("#paintandquest-video-link").setAttribute("src", "#kumparan-video-webm");
                 document.querySelector("#paintandquest-video-webm").play();
               }
             });
@@ -225,7 +225,7 @@
 	</div>
       </div>
 
-      <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/card.mind; showStats: false; uiScanning: #example-scanning-overlay;" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-scene mindar-image="imageTargetSrc: ./assets/ktp.mind; showStats: false; uiScanning: #example-scanning-overlay;" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
           <img id="card" src="./assets/ktp.jpeg" />
           <img id="icon-web" src="./assets/icons/web.png" />
@@ -236,11 +236,11 @@
           <img id="icon-play" src="./assets/icons/play.png" />
           <img id="icon-left" src="./assets/icons/left.png" />
           <img id="icon-right" src="./assets/icons/right.png" />
-          <img id="paintandquest-preview" src="./assets/portfolio/paintandquest-preview.png" />
-          <video id="paintandquest-video-mp4" autoplay="false" loop="true" src="./assets/portfolio/paintandquest.mp4"></video>
-          <video id="paintandquest-video-webm" autoplay="false" loop="true" src="./assets/portfolio/paintandquest.webm"></video>
-          <img id="coffeemachine-preview" src="./assets/portfolio/coffeemachine-preview.png" />
-          <img id="peak-preview" src="./assets/portfolio/peak-preview.png" />
+          <img id="paintandquest-preview" src="./assets/portfolio/kumparan-preview.jpg" />
+          <video id="paintandquest-video-mp4" autoplay="false" loop="true" src="./assets/portfolio/kumparan.mp4"></video>
+          <video id="paintandquest-video-webm" autoplay="false" loop="true" src="./assets/portfolio/kumparan.webm"></video>
+          <img id="coffeemachine-preview" src="./assets/portfolio/bekdev-preview.jpg" />
+          <img id="peak-preview" src="./assets/portfolio/porto-arvrhub.jpg" />
           
           <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
         </a-assets>
